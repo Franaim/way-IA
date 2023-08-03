@@ -8,6 +8,8 @@
 
 body {
     font-family: "Roboto Mono", sans-serif;
+    display: flex;
+    flex-direction: column;
 
 }
 
@@ -28,4 +30,5 @@ main {
 
 footer {
     background-color: burlywood;
+    margin-bottom: 0%;
 }
