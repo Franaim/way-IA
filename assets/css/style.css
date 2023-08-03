@@ -17,6 +17,11 @@ header {
 
 }
 
+.main-menu {
+    display: flex;
+    gap: 40px;
+}
+
 main {
     background-color: aquamarine;
 }
