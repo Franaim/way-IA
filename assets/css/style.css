@@ -16,19 +16,31 @@ body {
 header {
     background-color: cornflowerblue;
     font-family: "Josefin Sans", sans-serif;
+    min-height: 30vh;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
 
+h1 {
+    font-size: 700%;
+    margin-left: 3vh;
+    margin-top: 3vh;
 }
 
 .main-menu {
     display: flex;
-    gap: 40px;
+    gap: 70px;
+    margin-left: 15vh;
 }
 
 main {
     background-color: aquamarine;
+    min-height: 90vh;
 }
 
 footer {
     background-color: burlywood;
     margin-bottom: 0%;
+    min-height: 5vh
 }
