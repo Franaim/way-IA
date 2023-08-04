@@ -22,15 +22,23 @@ header {
     padding: 0 1rem
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
     flex-direction: column;
     position: fixed;
     z-index: 99;
     box-shadow: 0 2px 2px #5a5a5a;
 }
 
+header a {
+    text-decoration: none;
+    color: inherit;
+}
+
 h1 {
-    font-size: 700%;
-    margin: 2vh 40% 2vh 3vh;
+    font-size: 120px;
+    margin: 3vh 40% 1vh 3vh;
+    text-transform: uppercase;
+    letter-spacing: 30px;
 }
 
 .main-menu {
@@ -43,7 +51,7 @@ h1 {
 
 main {
     background-color: aquamarine;
-    min-height: 90vh;
+    min-height: 100vh;
 }
 
 footer {
