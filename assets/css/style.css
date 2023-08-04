@@ -35,6 +35,14 @@ header a {
     text-decoration: none;
     color: inherit;
 }
+
+h1 {
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    font-size: 180%;
+    padding: 2vh;
+}
+
 nav {
     position:absolute;
     width: 100%;
@@ -42,14 +50,7 @@ nav {
     box-shadow: 0 2px 2px #5a5a5a;
     background-color: #ffffff;
     display: none;
-}
-
-
-h1 {
-    text-transform: uppercase;
-    letter-spacing: 10px;
-    font-size: 180%;
-    padding: 2vh;
+    top: 100%;
 }
 
 #main-menu {
@@ -63,6 +64,14 @@ h1 {
     letter-spacing: 4px;
     list-style: none;
     flex-basis: 80vh;
+}
+
+#nav-toggle:checked~nav {
+    display: block;
+}
+
+#nav-toggle {
+    display: none;
 }
 
 main {
