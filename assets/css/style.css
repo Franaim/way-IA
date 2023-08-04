@@ -19,7 +19,7 @@ header {
     min-height: 20vh;
     max-height: 35vh;
     width: 100%;
-    padding: 0 1rem
+    padding: 0 1rem;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -50,7 +50,7 @@ h1 {
 }
 
 main {
-    background-color: aquamarine;
+    background-color: rgb(243, 241, 237);
     min-height: 100vh;
 }
 
