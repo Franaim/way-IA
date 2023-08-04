@@ -17,8 +17,6 @@ body {
 header {
     background-color: #ffffff;
     font-family: "Josefin Sans", sans-serif;
-    /*min-height: 20vh;
-    max-height: 35vh;*/
     width: 100%;
     padding: 0 1rem;
     display: flex;
@@ -89,6 +87,10 @@ footer {
 
 /* Media query: tablets and larger (768px and up) */
 @media screen and (min-width: 768px) {
+
+    header {
+        position: absolute;
+    }
 
     nav {
         position: relative;
