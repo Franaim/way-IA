@@ -16,7 +16,7 @@ body {
 header {
     background-color: cornflowerblue;
     font-family: "Josefin Sans", sans-serif;
-    min-height: 25vh;
+    min-height: 20vh;
     max-height: 35vh;
     display: flex;
     justify-content: space-evenly;
@@ -25,14 +25,15 @@ header {
 
 h1 {
     font-size: 700%;
-    margin-left: 3vh;
+    margin: 2vh 40% 2vh 3vh;
 }
 
 .main-menu {
     display: flex;
     gap: 70px;
     margin-left: 15vh;
-    align-self: flex-end;
+    align-items: flex-end;
+    margin-bottom: 1vh;
 }
 
 main {
