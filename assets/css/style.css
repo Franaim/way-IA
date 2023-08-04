@@ -14,13 +14,18 @@ body {
 }
 
 header {
-    background-color: cornflowerblue;
+    background-color: #ffffff;
     font-family: "Josefin Sans", sans-serif;
     min-height: 20vh;
     max-height: 35vh;
+    width: 100%;
+    padding: 0 1rem
     display: flex;
     justify-content: space-evenly;
     flex-direction: column;
+    position: fixed;
+    z-index: 99;
+    box-shadow: 0 2px 2px #5a5a5a;
 }
 
 h1 {
