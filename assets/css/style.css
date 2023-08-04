@@ -16,7 +16,8 @@ body {
 header {
     background-color: cornflowerblue;
     font-family: "Josefin Sans", sans-serif;
-    min-height: 30vh;
+    min-height: 25vh;
+    max-height: 35vh;
     display: flex;
     justify-content: space-evenly;
     flex-direction: column;
@@ -25,13 +26,13 @@ header {
 h1 {
     font-size: 700%;
     margin-left: 3vh;
-    margin-top: 3vh;
 }
 
 .main-menu {
     display: flex;
     gap: 70px;
     margin-left: 15vh;
+    align-self: flex-end;
 }
 
 main {
