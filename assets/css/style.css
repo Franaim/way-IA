@@ -28,12 +28,22 @@ header {
     position: fixed;
     z-index: 99;
     box-shadow: 0 2px 2px #5a5a5a;
+    
 }
 
 header a {
     text-decoration: none;
     color: inherit;
 }
+nav {
+    position:absolute;
+    width: 100%;
+    padding: 0 1rem;
+    box-shadow: 0 2px 2px #5a5a5a;
+    background-color: #ffffff;
+    display: none;
+}
+
 
 h1 {
     text-transform: uppercase;
