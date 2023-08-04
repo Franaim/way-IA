@@ -82,22 +82,25 @@ main {
 footer {
     background-color: rgb(216, 213, 210);
     margin-bottom: 0%;
-    min-height: 5vh
+    min-height: 5vh;
     display: flex;
     padding: 4px;
-    
+    justify-content: space-between;
 }
 
 #social-network-icons {
     display: flex;
-    align-items: flex-end;
     list-style-type: none;
-    gap: 4px;
+    gap: 5px;
+    order: 2;
+    align-self: center;
+
 }
 
 footer > p {
     font-size: 13px;
     padding-left: 2px;
+    align-self: center;
 }
 
 /* Media query: tablets and larger (768px and up) */
