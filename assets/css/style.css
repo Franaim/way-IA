@@ -107,7 +107,7 @@ footer {
         margin-left: 1em;
         align-self: flex-end;
         margin-bottom: 1em;
-        font-size: 115%;
+        font-size: 110%;
         letter-spacing: 4px;
         list-style: none;
         flex-basis: 80vh;
@@ -117,7 +117,36 @@ footer {
         display: none;
     }
 
+    h1 {
+        text-transform: uppercase;
+        letter-spacing: 10px;
+        font-size: 300%;
+        padding-top: 25px;
+        margin-bottom: 0;
+        padding-bottom: 0;
+       }
+
     main {
-        margin-top: 105px;
+        margin-top: 125px;
     }
 }
+
+/* Media query: laptops and desktops (992px and up) */
+@media screen and (min-width: 992px) {
+    h1 {
+        letter-spacing: 40px;
+        font-size: 600%;
+        padding-top: 25px;
+    }
+ 
+    #main-menu a:hover{
+        border-bottom: 1px solid;
+    }
+
+    #main-menu {
+        gap: 150px;
+        letter-spacing: 6px;
+    }
+}
+
+    
