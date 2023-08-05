@@ -97,7 +97,7 @@ main {
     padding-right: 15px;
     padding-bottom: 18px;
     position: absolute;
-    bottom: 25%;
+    bottom: 35%;
     width: 200px;
     border-radius: 0 20px 20px 0;
 }
@@ -187,7 +187,7 @@ footer {
         padding-bottom: 28px;
         padding-left: 24px;
         position: absolute;
-        bottom: 20%;
+        bottom: 33%;
         width: 50%;
         border-radius: 0 30px 30px 0;
     }
@@ -234,7 +234,7 @@ footer {
             padding-bottom: 28px;
             padding-left: 24px;
             position: absolute;
-            bottom: 20%;
+            bottom: 30%;
             width: 33%;
         }
     }
