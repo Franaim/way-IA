@@ -92,12 +92,11 @@ footer {
     display: flex;
     list-style-type: none;
     gap: 5px;
-    order: 2;
     align-self: center;
 
 }
 
-footer > p {
+#copyright {
     font-size: 13px;
     padding-left: 2px;
     align-self: center;
