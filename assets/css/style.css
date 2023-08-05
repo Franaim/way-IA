@@ -82,24 +82,25 @@ main {
 footer {
     background-color: rgb(216, 213, 210);
     margin-bottom: 0%;
-    min-height: 5vh;
+    min-height: 4vh;
     display: flex;
-    padding: 4px;
+    padding: 8px;
     justify-content: space-between;
+    align-items: center;
 }
 
 #social-network-icons {
     display: flex;
     list-style-type: none;
-    gap: 5px;
-    align-self: center;
-
+    gap: 15px;
+    justify-content: space-between;
+    font-size: 20px;
 }
 
 #copyright {
     font-size: 13px;
     padding-left: 2px;
-    align-self: center;
+    align-self: flex-end;
 }
 
 /* Media query: tablets and larger (768px and up) */
@@ -148,24 +149,39 @@ footer {
     main {
         margin-top: 125px;
     }
-}
-
-/* Media query: laptops and desktops (992px and up) */
-@media screen and (min-width: 992px) {
-    h1 {
-        letter-spacing: 40px;
-        font-size: 600%;
-        padding-top: 25px;
-    }
- 
-    #main-menu a:hover{
-        border-bottom: 1px solid;
+    footer {
+        min-height: 4vh;
+        padding: 10px;
     }
 
-    #main-menu {
-        gap: 150px;
-        letter-spacing: 6px;
+    #social-network-icons {
+        gap: 20px;
+    }
+
+    #copyright {
+        font-size: 13px;
+        padding-left: 2px;
+        align-self: center;
+    }
+
+    /* Media query: laptops and desktops (992px and up) */
+    @media screen and (min-width: 992px) {
+        h1 {
+            letter-spacing: 40px;
+            font-size: 600%;
+            padding-top: 25px;
+        }
+
+        #main-menu a:hover {
+            border-bottom: 1px solid;
+        }
+
+        #main-menu {
+            gap: 150px;
+            letter-spacing: 6px;
+        }
     }
 }
+
 
     
