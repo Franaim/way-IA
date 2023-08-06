@@ -310,8 +310,8 @@ input[type=submit]:active {
 }
 
 
-#about-us-background-photo {
-    /*position: fixed;
+/*#about-us-background-photo {
+    position: fixed;
     height: auto;
     width: 50px;
     max-width: 100%;
@@ -325,10 +325,8 @@ input[type=submit]:active {
     align-self: center;
     height: 750px;
     width: 100%;
-    background-repeat: no-repeat;*/
-
-    
-}
+    background-repeat: no-repeat;
+}*/
 
 #about-us-text-box {
     background-color: rgba(255, 255, 255, .9);
@@ -470,37 +468,26 @@ input[type=submit]:active {
     /* About us page style */
 
         #about-us {
-            height: 100vh;
+            background: url("../images/about-us-min.webp") no-repeat fixed left top;
+            background-size: cover;
+            height: 120vh;
             background-color: rgb(243, 241, 237);
             display: flex;
             justify-content: center;
         }
-    
-        #about-us-background-photo {
-            position: absolute;
-            width: 800px;
-            height: auto;
-            z-index: 1;
-            display: block;
-            padding: 5px;
-            margin: 20px;
-            border-radius: 20px;
-            margin-left: 60px;
-        }
+
     
         #about-us-text-box {
             background-color: rgba(255, 255, 255, .9);
             padding: 20px 40px 40px 40px;
-            width: 800px;
-            border-radius: 20px;
+            width: 80%;
+            border-radius: 0 20px 20px 0;
             height: fit-content;
-            align-self: flex-end;
+            align-self: flex-start;
             margin-right: 30px;
-            margin-left: 700px;
             margin-top: 20px;
-            margin-bottom: 200px;
+            margin-bottom: 170px;
             position: relative;
-            z-index: 50;
         }
 
     /* Media query: laptops and desktops (992px and up) */
@@ -555,6 +542,30 @@ input[type=submit]:active {
             width: 390px;
             margin-top: 10px;
             margin-left: 0;
+        }
+
+        /* About us page style */
+
+        #about-us {
+            background: url("../images/about-us-min.webp") no-repeat fixed right top;
+            background-size: 100vh;
+            background-color: rgb(243, 241, 237);
+            display: flex;
+            justify-content: center;
+        }
+
+
+        #about-us-text-box {
+            background-color: rgba(255, 255, 255, .9);
+            padding: 20px 40px 40px 40px;
+            width: 80%;
+            border-radius: 0 20px 20px 0;
+            height: fit-content;
+            align-self: flex-start;
+            margin-right: 30px;
+            margin-top: 20px;
+            margin-bottom: 170px;
+            position: relative;
         }
 
     }
