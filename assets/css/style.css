@@ -311,7 +311,7 @@ input[type=submit]:active {
 
 #about-us {
     height: 100vh;
-    background-color: rgb(243, 241, 237)
+    background-color: rgb(243, 241, 237);
 }
 
 /* Media query: tablets and larger (768px and up) */
