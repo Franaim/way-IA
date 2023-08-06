@@ -120,7 +120,9 @@ main {
     border-radius: 0 20px 20px 0;
 }
 
-#logo-in-text {
+/*Every time the name of the gallery appears in a text it should look like this:*/
+
+.logo-in-text {
     font-family: "Josefin Sans", sans-serif;
     font-weight: 600;
     font-size: 15px;
@@ -297,6 +299,13 @@ input[type=submit]:active {
 
 /*Styling for about-us page*/
 
+#about-us {
+    height: 100vh;
+    background-color: rgb(243, 241, 237);
+    display: flex;
+    flex-direction: row;
+}
+
 #about-us-background-photo {
     height: 80vh;
     width: auto;
@@ -307,12 +316,27 @@ input[type=submit]:active {
     margin:20px;
     border-radius: 20px;
     object-fit: fill;
+    margin-left: 60px;
 }
 
-#about-us {
-    height: 100vh;
-    background-color: rgb(243, 241, 237);
+#about-us-text-box {
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 20px;
+    width: 300px;
+    height: fit-content;
+    margin-right: 60px;
+    position: fixed;
+    z-index: 50;
 }
+
+/* In this case, this margin overrides the one that targets all h2 elements */
+
+#about-us-text-box > h2 {
+    margin-top: 2px;
+}
+
+
 
 /* Media query: tablets and larger (768px and up) */
 @media screen and (min-width: 768px) {
