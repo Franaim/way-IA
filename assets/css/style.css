@@ -170,7 +170,7 @@ h2 {
 
 footer {
     background-color: rgb(216, 213, 210);
-    margin-bottom: 0%;
+    margin-bottom: 0;
     min-height: 4vh;
     width: 100%;
     display: flex;
@@ -179,6 +179,8 @@ footer {
     align-items: center;
     color: #303030;
     z-index: 80;
+    bottom: 0;
+    position: fixed;
 }
 
 #social-network-icons {
@@ -293,7 +295,24 @@ input[type=submit]:active {
     font-weight: 600;
 }
 
+/*Styling for about-us page*/
 
+#about-us-background-photo {
+    height: 80vh;
+    width: auto;
+    position: relative;
+    z-index: 1;
+    display: block;
+    padding: 5px;
+    margin:20px;
+    border-radius: 20px;
+    object-fit: fill;
+}
+
+#about-us {
+    height: 100vh;
+    background-color: rgb(243, 241, 237)
+}
 
 /* Media query: tablets and larger (768px and up) */
 @media screen and (min-width: 768px) {
