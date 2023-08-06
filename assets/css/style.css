@@ -1,5 +1,5 @@
 /*Import font links*/
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&display=swap");
 
 /*Wildcard selector to change default styling properties*/
 * {
@@ -31,12 +31,12 @@ header {
     position: fixed;
     z-index: 99;
     box-shadow: 0 2px 2px #5a5a5a;
-
 }
 
 /*Change of default style for anchor elements in header and footer*/
 
-header a, footer a {
+header a,
+footer a {
     text-decoration: none;
     color: inherit;
 }
@@ -109,7 +109,7 @@ main {
 /*Styling for "welcome text" box*/
 
 #welcome-text {
-    background-color: rgba(255, 255, 255, .9);
+    background-color: rgba(255, 255, 255, 0.9);
     padding-top: 18px;
     padding-left: 18px;
     padding-right: 15px;
@@ -249,7 +249,7 @@ footer {
     border-radius: 5px;
 }
 
-input[type=file] {
+input[type="file"] {
     margin-top: 5px;
     width: 135px;
     display: none;
@@ -277,7 +277,7 @@ input[type=file] {
     font-weight: 600;
 }
 
-input[type=submit] {
+input[type="submit"] {
     color: #ffffff;
     background-color: #000000;
     width: 60px;
@@ -289,11 +289,11 @@ input[type=submit] {
     height: 30px;
 }
 
-input[type=submit]:hover {
+input[type="submit"]:hover {
     font-weight: 600;
 }
 
-input[type=submit]:active {
+input[type="submit"]:active {
     font-weight: 600;
 }
 
@@ -309,27 +309,8 @@ input[type=submit]:active {
     height: auto;
 }
 
-
-/*#about-us-background-photo {
-    position: fixed;
-    height: auto;
-    width: 50px;
-    max-width: 100%;
-    height: auto;
-    z-index: 1;
-    display: block;
-    padding: 5px;
-    margin:20px;
-    border-radius: 20px;
-    margin-right: 0;
-    align-self: center;
-    height: 750px;
-    width: 100%;
-    background-repeat: no-repeat;
-}*/
-
 #about-us-text-box {
-    background-color: rgba(255, 255, 255, .9);
+    background-color: rgba(255, 255, 255, 0.9);
     padding: 10px 10px 20px 15px;
     width: 85%;
     border-radius: 0 20px 20px 0;
@@ -342,14 +323,13 @@ input[type=submit]:active {
 
 /* In this case, this margin overrides the one that targets all h2 elements */
 
-#about-us-text-box > h2 {
+#about-us-text-box>h2 {
     margin-top: 10px;
     margin-bottom: 10px;
 }
 
-
-
 /* Media query: tablets and larger (768px and up) */
+
 @media screen and (min-width: 768px) {
 
     header {
@@ -458,115 +438,108 @@ input[type=submit]:active {
         margin-left: 0;
     }
 
-    input[type=submit] {
+    input[type="submit"] {
         width: 70px;
         height: 30px;
         align-self: center;
-
     }
 
     /* About us page style */
 
-        #about-us {
-            background: url("../images/about-us-min.webp") no-repeat fixed left top;
-            background-size: cover;
-            height: 120vh;
-            background-color: rgb(243, 241, 237);
-            display: flex;
-            justify-content: center;
-        }
+    #about-us {
+        background: url("../images/about-us-min.webp") no-repeat fixed left top;
+        background-size: cover;
+        height: 120vh;
+        background-color: rgb(243, 241, 237);
+        display: flex;
+        justify-content: center;
+    }
 
-    
-        #about-us-text-box {
-            background-color: rgba(255, 255, 255, .9);
-            padding: 20px 40px 40px 40px;
-            width: 80%;
-            border-radius: 0 20px 20px 0;
-            height: fit-content;
-            align-self: flex-start;
-            margin-right: 30px;
-            margin-top: 20px;
-            margin-bottom: 170px;
-            position: relative;
-        }
+    #about-us-text-box {
+        background-color: rgba(255, 255, 255, 0.9);
+        padding: 20px 40px 40px 40px;
+        width: 80%;
+        border-radius: 0 20px 20px 0;
+        height: fit-content;
+        align-self: flex-start;
+        margin-right: 30px;
+        margin-top: 20px;
+        margin-bottom: 170px;
+        position: relative;
+    }
+}
 
-    /* Media query: laptops and desktops (992px and up) */
-    @media screen and (min-width: 992px) {
-        h1 {
-            letter-spacing: 40px;
-            font-size: 600%;
-            padding-top: 25px;
-        }
+/* Media query: laptops and larger (992px and up) */
 
-        #main-menu a:hover {
-            border-bottom: 1px solid;
-        }
+@media screen and (min-width: 992px) {
 
-        #main-menu {
-            gap: 150px;
-            letter-spacing: 6px;
-        }
+    h1 {
+        letter-spacing: 40px;
+        font-size: 600%;
+        padding-top: 25px;
+    }
 
-        main {
-            margin-top: 175px;
-            height: 750px;
-        }
+    #main-menu a:hover {
+        border-bottom: 1px solid;
+    }
 
-        #welcome-text {
-            padding-top: 24px;
-            padding-right: 0;
-            padding-bottom: 32px;
-            padding-left: 24px;
-            position: absolute;
-            bottom: 30%;
-            width: 33%;
-        }
+    #main-menu {
+        gap: 150px;
+        letter-spacing: 6px;
+    }
 
-        h2 {
-            font-size: 160%;
-            padding: 7px;
-            margin-top: 35px;
-            margin-bottom: 3px;
-        }
+    main {
+        margin-top: 175px;
+        height: 750px;
+    }
 
-        /* Form style */
+    #welcome-text {
+        padding-top: 24px;
+        padding-right: 0;
+        padding-bottom: 32px;
+        padding-left: 24px;
+        position: absolute;
+        bottom: 30%;
+        width: 33%;
+    }
 
-        #form {
-            height: 550px;
-            margin-top: 30px;
-            margin-bottom: 30px;
-        }
+    h2 {
+        font-size: 160%;
+        padding: 7px;
+        margin-top: 35px;
+        margin-bottom: 3px;
+    }
 
-        #message-field {
-            min-height: 180px;
-            width: 390px;
-            margin-top: 10px;
-            margin-left: 0;
-        }
+    /* Form style */
 
-        /* About us page style */
+    #form {
+        height: 550px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
 
-        #about-us {
-            background: url("../images/about-us-min.webp") no-repeat fixed right top;
-            background-size: 100vh;
-            background-color: rgb(243, 241, 237);
-            display: flex;
-            justify-content: center;
-        }
+    #message-field {
+        min-height: 180px;
+        width: 390px;
+        margin-top: 10px;
+        margin-left: 0;
+    }
 
+    /* About us page style */
 
-        #about-us-text-box {
-            background-color: rgba(255, 255, 255, .9);
-            padding: 20px 40px 40px 40px;
-            width: 80%;
-            border-radius: 0 20px 20px 0;
-            height: fit-content;
-            align-self: flex-start;
-            margin-right: 30px;
-            margin-top: 20px;
-            margin-bottom: 170px;
-            position: relative;
-        }
+    #about-us {
+        background: url("../images/about-us-min.webp") no-repeat fixed right bottom;
+        background-size: 150vh;
+        height: 1000px;
+        background-color: rgb(243, 241, 237);
+    }
 
+    #about-us-text-box {
+        padding: 20px 40px 40px 40px;
+        width: 45%;
+        margin-left: 10px;
+        margin-top: 200px;
+        margin-bottom: 20%;
+        border-radius: 20px;
     }
 }
