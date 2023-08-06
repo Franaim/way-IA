@@ -34,15 +34,15 @@
                 <div id="form">
                     <div>
                         <label for="name-field" class="form-label">Name</label>
-                        <input id="name-field" type="text" name="full_name" placeholder="Ai Weiwei" required>
+                        <input id="name-field" type="text" name="full_name" placeholder="Ai Weiwei" required class="form-box">
                     </div>
                     <div>
                         <label for="email-field" class="form-label"></label>E-mail address</label>
-                        <input id="email-field" type="email" name="email" placeholder="sunflowerseeds@artmail.com" required>
+                        <input id="email-field" type="email" name="email" placeholder="sunflowerseeds@artmail.com" class="form-box" required>
                     </div>
                     <div>
                         <label for="age" class="form-label">Age</label>
-                        <select id="age" name="age" required>
+                        <select id="age" name="age" class="form-box" required>
                             <option value="18-25">18-25</option>
                             <option value="26-32">26-32</option>
                             <option value="33-39">33-39</option>
@@ -51,7 +51,8 @@
                         </select>
                     </div>
                     <div>
-                        <label for="portfolio" class="form-label">Show us your work</label>
+                        <label for="button-upload">Show us your work</label>
+                        <button id="button-upload"><label for="portfolio" class="form-label form-box">Upload portfolio</label></button>
                         <input id="portfolio" type="file" name="portfolio" required>
                     </div>
                     <div>

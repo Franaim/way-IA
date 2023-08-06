@@ -227,22 +227,49 @@ footer {
 
 #name-field {
     width: 180px;
+    border: 1px solid;
 }
 
 #email-field {
     width: 230px;
     margin-top: 5px;
+    border: 1px solid;
 }
 
 #message-field {
     min-height: 180px;
     width: 235px;
     margin-top: 5px;
+    border: 1px solid;
+    border-radius: 5px;
 }
 
 input[type=file] {
     margin-top: 5px;
     width: 135px;
+    display: none;
+}
+
+.form-box {
+    padding: 3px;
+    height: 30px;
+    border-radius: 5px;
+}
+
+#button-upload {
+    padding: 7px;
+    color: #ffffff;
+    background-color: #000000;
+    border: none;
+    border-radius: 5px;
+}
+
+#button-upload:hover {
+    font-weight: 600;
+}
+
+#button-upload:active {
+    font-weight: 600;
 }
 
 input[type=submit] {
