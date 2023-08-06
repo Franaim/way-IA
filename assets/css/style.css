@@ -138,9 +138,10 @@ main {
 h2 {
     font-size: 100%;
     padding: 7px;
-    margin-top: 5px;
+    margin-top: 15px;
     margin-bottom: 3px;
     text-align: center;
+    text-transform: uppercase;
 }
 
 
@@ -172,13 +173,19 @@ footer {
 
 /* Form style */
 
+#collaborate {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 #form {
     width: 270px;
     height: 520px;
     margin-top: 10px;
     margin-left: 5px;
-    margin-right: 3px;
-    margin-bottom: 10px;
+    margin-right: 5px;
+    margin-bottom: 15px;
     background-color: #ffffff;
     border: 0;
     border-radius: 20px;
@@ -191,6 +198,7 @@ footer {
     justify-content: center;
     align-items: flex-start;
     flex-wrap: wrap;
+    box-shadow: 0 2px 2px #a0a0a0;
 }
 
 #name-field {
@@ -221,6 +229,7 @@ input[type=submit] {
     padding: 5px;
     margin-left: 80px;
     margin-right: 80px;
+    height: 30px;
 }
 
 input[type=submit]:hover {
@@ -295,6 +304,13 @@ input[type=submit]:active {
         border-radius: 10px 0 0 10px;
     }
 
+    h2 {
+        font-size: 140%;
+        padding: 7px;
+        margin-top: 25px;
+        margin-bottom: 3px;
+    }
+
     footer {
         min-height: 4vh;
         padding: 10px;
@@ -308,6 +324,36 @@ input[type=submit]:active {
         font-size: 13px;
         padding-left: 2px;
         align-self: center;
+    }
+
+    /* Form style */
+
+    #form {
+        width: 450px;
+        height: 460px;
+        margin-top: 30px;
+        margin-bottom: 0;
+        vertical-align: top;
+        gap: 20px;
+        padding-left: 30px;
+        padding-right: 30px;
+        justify-content: center;
+        flex-wrap: wrap;
+        box-shadow: 0 2px 2px #a0a0a0;
+    }
+
+    #message-field {
+        min-height: 120px;
+        width: 390px;
+        margin-top: 10px;
+        margin-left: 0;
+    }
+
+    input[type=submit] {
+        width: 70px;
+        height: 30px;
+        align-self: center;
+        
     }
 
     /* Media query: laptops and desktops (992px and up) */
@@ -340,6 +386,37 @@ input[type=submit]:active {
             bottom: 30%;
             width: 33%;
         }
+
+        h2 {
+            font-size: 160%;
+            padding: 7px;
+            margin-top: 25px;
+            margin-bottom: 3px;
+        }
+
+        /* Form style */
+
+        #form {
+            width: 450px;
+            height: 550px;
+            margin-top: 30px;
+            margin-bottom: 0;
+            vertical-align: top;
+            gap: 20px;
+            padding-left: 30px;
+            padding-right: 30px;
+            justify-content: center;
+            flex-wrap: wrap;
+            box-shadow: 0 2px 2px #a0a0a0;
+        }
+
+        #message-field {
+            min-height: 180px;
+            width: 390px;
+            margin-top: 10px;
+            margin-left: 0;
+        }
+    
     }
 }
 
