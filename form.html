@@ -29,7 +29,43 @@
             </ul>
         </nav>
     </header>
-    <main>Content</main>
+    <main>
+        <section id="collaborate-with-us">
+            <h2>Collaborate with us</h2>
+            <form method="POST">
+                <fieldset>
+                    <div id="form">
+                        <div>
+                            <label for="name-field" class="form-label">Name</label>
+                            <input id="name-field" type="text" name="full_name" placeholder="Ai Weiwei" required>
+                        </div>
+                        <div>
+                            <label for="email-field" class="form-label"></label>E-mail address</label>
+                            <input id="email-field" type="email" name="email" placeholder="sunflowerseeds@artmail.com" required>
+                        </div>
+                        <div>
+                            <label for="age" class="form-label">Age</label>
+                            <select id="age" name="age" required>
+                                <option value="18-25">18-25</option>
+                                <option value="26-32">26-32</option>
+                                <option value="33-39">33-39</option>
+                                <option value="40-50">40-50</option>
+                                <option value="50+">50+</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="portfolio" class="form-label">Show us your work</label>
+                            <input id="portfolio" type="file" name="portfolio" required>
+                        </div>
+                        <div>
+                            <label for="message-field" class="form-label">How would you like to collaborate with <span id="logo-in-text">WAY AI AI</span></label>
+                            <input id="message-field" type="text" name="message" required>
+                        </div>
+                    </div>
+                </fieldset>
+            </form>
+        </section>
+    </main>
     <footer>
         <div>
             <ul id="social-network-icons">
