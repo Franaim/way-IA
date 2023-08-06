@@ -300,35 +300,42 @@ input[type=submit]:active {
 /*Styling for about-us page*/
 
 #about-us {
-    height: 100vh;
-    background-color: rgb(243, 241, 237);
+    background: url("../images/about-us-min.webp") no-repeat left center;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-items: flex-start;
+    align-items: flex-start;
+    height: 100%;
+    margin-top: 60px;
+    margin-bottom: 150px;
 }
 
 #about-us-background-photo {
-    position: absolute;
-    width: 800px;
+    /*position: fixed;
+    height: auto;
+    width: 50px;
+    max-width: 100%;
     height: auto;
     z-index: 1;
     display: block;
     padding: 5px;
     margin:20px;
     border-radius: 20px;
-    margin-left: 60px;
+    margin-right: 0;
+    align-self: center;
+    height: 750px;
+    width: 100%;
+    background-repeat: no-repeat;*/
+
+    
 }
 
 #about-us-text-box {
     background-color: rgba(255, 255, 255, .9);
-    padding: 20px 40px 40px 40px;
-    width: 800px;
-    border-radius: 20px;
+    padding: 10px;
+    width: 220px;
+    border-radius: 0 20px 20px 0;
     height: fit-content;
-    align-self: flex-end;
-    margin-right: 30px;
-    margin-left: 700px;
-    margin-top: 20px;
-    margin-bottom: 200px;
     position: relative;
     z-index: 50;
 }
@@ -336,7 +343,8 @@ input[type=submit]:active {
 /* In this case, this margin overrides the one that targets all h2 elements */
 
 #about-us-text-box > h2 {
-    margin-top: 2px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 
@@ -456,7 +464,7 @@ input[type=submit]:active {
         align-self: center;
 
     }
-    
+
     /* About us page style */
 
         #about-us {
