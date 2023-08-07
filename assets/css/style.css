@@ -335,11 +335,29 @@ input[type="submit"]:active {
 
 /* Styling for Artwork page */
 
+#artwork-section {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  row-gap: 20px;
+  column-gap: 20px;
+  align-content: flex-start;
+  padding: 20px;
+  
+}
+
+#artwork-section > * {
+  width: 270px;
+  height: 300px;
+  border: 1px solid;
+  flex-grow: 1;
+
+}
+
 .artwork-box {
   background-color: #ffffff;
-  height: 133px;
-  width: 100px;
-  border-radius: 20xp;
+  border-radius: 10px;
+  padding: 10px;
 }
 
 /* Media query: tablets and larger (768px and up) */
