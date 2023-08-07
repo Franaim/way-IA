@@ -8,6 +8,14 @@
   box-sizing: border-box;
 }
 
+:root {
+  /* 
+    variable that we reuse for 
+    footer height and main padding-bottom
+  */
+  --footer-height: 40px;
+}
+
 /*General styling for the body content*/
 
 body {
@@ -406,7 +414,7 @@ input[type="submit"]:active {
 
   main {
     margin-top: 125px;
-    padding-bottom: 50px;
+    padding-bottom: var(--footer-height);
   }
 
   #welcome-text {
@@ -432,7 +440,7 @@ input[type="submit"]:active {
   }
 
   footer {
-    min-height: 4vh;
+    height: var(--footer-height);
     padding: 10px;
   }
 
