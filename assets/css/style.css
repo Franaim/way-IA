@@ -3,542 +3,554 @@
 
 /*Wildcard selector to change default styling properties*/
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 /*General styling for the body content*/
 
 body {
-    font-family: "Roboto Mono", sans-serif;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+  font-family: "Roboto Mono", sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 /*Style for the header*/
 
 header {
-    background-color: #ffffff;
-    font-family: "Josefin Sans", sans-serif;
-    width: 100%;
-    padding: 0 1rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    position: fixed;
-    z-index: 99;
-    box-shadow: 0 2px 2px #5a5a5a;
+  background-color: #ffffff;
+  font-family: "Josefin Sans", sans-serif;
+  width: 100%;
+  padding: 0 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: fixed;
+  z-index: 99;
+  box-shadow: 0 2px 2px #5a5a5a;
 }
 
 /*Change of default style for anchor elements in header and footer*/
 
 header a,
 footer a {
-    text-decoration: none;
-    color: inherit;
+  text-decoration: none;
+  color: inherit;
 }
 
 /*Styling for title on the header*/
 
 h1 {
-    text-transform: uppercase;
-    letter-spacing: 10px;
-    font-size: 180%;
-    padding: 1vh;
-    margin-top: 3px;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  font-size: 180%;
+  padding: 1vh;
+  margin-top: 3px;
 }
 
 /*Styling for main menu/navigation bar on the header*/
 
 nav {
-    position: absolute;
-    width: 100%;
-    padding: 0 1rem;
-    box-shadow: 0 2px 2px #3f3f3f;
-    background-color: #ffffff;
-    display: none;
-    top: 99%;
+  position: absolute;
+  width: 100%;
+  padding: 0 1rem;
+  box-shadow: 0 2px 2px #3f3f3f;
+  background-color: #ffffff;
+  display: none;
+  top: 99%;
 }
 
 #main-menu {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    margin-left: 1em;
-    align-self: flex-end;
-    margin-bottom: 1em;
-    font-size: 115%;
-    letter-spacing: 4px;
-    list-style: none;
-    flex-basis: 80vh;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-left: 1em;
+  align-self: flex-end;
+  margin-bottom: 1em;
+  font-size: 115%;
+  letter-spacing: 4px;
+  list-style: none;
+  flex-basis: 80vh;
 }
 
-#nav-toggle:checked~nav {
-    display: block;
+#nav-toggle:checked ~ nav {
+  display: block;
 }
 
 #nav-toggle {
-    display: none;
+  display: none;
 }
 
 .active {
-    border-bottom: 1px solid #5f5f5f;
+  border-bottom: 1px solid #5f5f5f;
 }
 
 /*General styling for main content in all pages*/
 
 main {
-    background-color: rgb(243, 241, 237);
-    flex: 1 0 auto;
-    margin-top: 60px;
-    width: 100%;
+  background-color: rgb(243, 241, 237);
+  flex: 1 0 auto;
+  margin-top: 60px;
+  width: 100%;
 }
 
 /*Background image in index*/
 
 #background-image {
-    height: 750px;
-    width: 100%;
-    background: url("../images/2.png") no-repeat right center/cover;
-    position: relative;
+  height: 750px;
+  width: 100%;
+  background: url("../images/2.png") no-repeat right center/cover;
+  position: relative;
 }
 
 /*Styling for "welcome text" box*/
 
 #welcome-text {
-    background-color: rgba(255, 255, 255, 0.9);
-    padding-top: 18px;
-    padding-left: 18px;
-    padding-right: 15px;
-    padding-bottom: 18px;
-    position: absolute;
-    bottom: 50%;
-    width: 200px;
-    border-radius: 0 20px 20px 0;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding-top: 18px;
+  padding-left: 18px;
+  padding-right: 15px;
+  padding-bottom: 18px;
+  position: absolute;
+  bottom: 50%;
+  width: 200px;
+  border-radius: 0 20px 20px 0;
 }
 
 /*Every time the name of the gallery appears in a text it should look like this:*/
 
 .logo-in-text {
-    font-family: "Josefin Sans", sans-serif;
-    font-weight: 600;
-    font-size: 15px;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 600;
+  font-size: 15px;
 }
 
 /*Styling for "If you're an artist" box*/
 
 #for-artists {
-    color: #ffffff;
-    background-color: rgba(0, 0, 0, 0.8);
-    padding: 10px;
-    bottom: 10%;
-    width: 210px;
-    border-radius: 20px 0 0 20px;
-    text-align: center;
-    right: 0;
-    margin-right: 0;
-    position: absolute;
-    z-index: 99;
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 10px;
+  bottom: 10%;
+  width: 210px;
+  border-radius: 20px 0 0 20px;
+  text-align: center;
+  right: 0;
+  margin-right: 0;
+  position: absolute;
+  z-index: 99;
 }
 
 #click-here {
-    text-decoration: none;
-    color: inherit;
+  text-decoration: none;
+  color: inherit;
 }
 
 #click-here:hover {
-    font-weight: 800;
+  font-weight: 800;
 }
 
 #click-here:active {
-    font-weight: 800;
+  font-weight: 800;
 }
 
 /*Styling for titles in all pages except for index*/
 
 h2 {
-    font-size: 100%;
-    padding: 7px;
-    margin-top: 15px;
-    margin-bottom: 3px;
-    text-align: center;
-    text-transform: uppercase;
+  font-size: 100%;
+  padding: 7px;
+  margin-top: 15px;
+  margin-bottom: 3px;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 /*Styling for footer*/
 
 footer {
-    background-color: rgb(216, 213, 210);
-    margin-bottom: 0;
-    min-height: 4vh;
-    width: 100%;
-    display: flex;
-    padding: 8px;
-    justify-content: space-between;
-    align-items: center;
-    color: #303030;
-    z-index: 80;
-    bottom: 0;
-    position: fixed;
+  background-color: rgb(216, 213, 210);
+  margin-bottom: 0;
+  min-height: 4vh;
+  width: 100%;
+  display: flex;
+  padding: 8px;
+  justify-content: space-between;
+  align-items: center;
+  color: #303030;
+  z-index: 99;
+  bottom: 0;
+  position: fixed;
 }
 
 #social-network-icons {
-    display: flex;
-    list-style-type: none;
-    gap: 15px;
-    justify-content: space-between;
-    font-size: 20px;
+  display: flex;
+  list-style-type: none;
+  gap: 15px;
+  justify-content: space-between;
+  font-size: 20px;
 }
 
 #copyright {
-    font-size: 13px;
-    padding-left: 2px;
-    align-self: flex-end;
+  font-size: 13px;
+  padding-left: 2px;
+  align-self: flex-end;
 }
 
 /* Form style */
 
 #collaborate {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 #form {
-    width: 270px;
-    height: 580px;
-    margin-top: 10px;
-    margin-left: 5px;
-    margin-right: 5px;
-    margin-bottom: 15px;
-    padding-top: 10px;
-    padding-bottom: 5px;
-    background-color: #ffffff;
-    border: 0;
-    border-radius: 20px;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    padding-left: 18px;
-    justify-content: center;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    box-shadow: 0 2px 2px #a0a0a0;
+  width: 270px;
+  height: 580px;
+  margin-top: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-bottom: 15px;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  background-color: #ffffff;
+  border: 0;
+  border-radius: 20px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-left: 18px;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  box-shadow: 0 2px 2px #a0a0a0;
 }
 
 #name-field {
-    width: 180px;
-    border: 1px solid;
+  width: 180px;
+  border: 1px solid;
 }
 
 #email-field {
-    width: 230px;
-    margin-top: 5px;
-    border: 1px solid;
+  width: 230px;
+  margin-top: 5px;
+  border: 1px solid;
 }
 
 #message-field {
-    min-height: 180px;
-    width: 235px;
-    margin-top: 5px;
-    border: 1px solid;
-    border-radius: 5px;
+  min-height: 180px;
+  width: 235px;
+  margin-top: 5px;
+  border: 1px solid;
+  border-radius: 5px;
 }
 
 input[type="file"] {
-    margin-top: 5px;
-    width: 135px;
-    display: none;
+  margin-top: 5px;
+  width: 135px;
+  display: none;
 }
 
+input[type="text"], input[type="email"] {
+padding-left: 6px;
+}
+
+
 .form-box {
-    padding: 3px;
-    height: 30px;
-    border-radius: 5px;
+  padding: 3px;
+  height: 30px;
+  border-radius: 5px;
 }
 
 #button-upload {
-    padding: 7px;
-    color: #ffffff;
-    background-color: #000000;
-    border: none;
-    border-radius: 5px;
+  padding: 7px;
+  color: #ffffff;
+  background-color: #000000;
+  border: none;
+  border-radius: 5px;
 }
 
 #button-upload:hover {
-    font-weight: 600;
+  font-weight: 600;
 }
 
 #button-upload:active {
-    font-weight: 600;
+  font-weight: 600;
 }
 
 input[type="submit"] {
-    color: #ffffff;
-    background-color: #000000;
-    width: 60px;
-    border: none;
-    border-radius: 5px;
-    padding: 5px;
-    margin-left: 80px;
-    margin-right: 80px;
-    height: 30px;
+  color: #ffffff;
+  background-color: #000000;
+  width: 60px;
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+  margin-left: 80px;
+  margin-right: 80px;
+  height: 30px;
 }
 
 input[type="submit"]:hover {
-    font-weight: 600;
+  font-weight: 600;
 }
 
 input[type="submit"]:active {
-    font-weight: 600;
+  font-weight: 600;
 }
 
 /*Styling for about-us page*/
 
 #about-us {
-    background: url("../images/about-us-min.webp") no-repeat center top;
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    justify-items: flex-start;
-    align-items: flex-start;
-    height: auto;
+  background: url("../images/about-us-min.webp") no-repeat center top;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-items: flex-start;
+  align-items: flex-start;
+  height: auto;
 }
 
 #about-us-text-box {
-    background-color: rgba(255, 255, 255, 0.9);
-    padding: 10px 10px 20px 15px;
-    width: 85%;
-    border-radius: 0 20px 20px 0;
-    height: fit-content;
-    position: relative;
-    z-index: 50;
-    margin-top: 60px;
-    margin-bottom: 150px;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 10px 10px 20px 15px;
+  width: 85%;
+  border-radius: 0 20px 20px 0;
+  height: fit-content;
+  position: relative;
+  z-index: 50;
+  margin-top: 60px;
+  margin-bottom: 150px;
 }
 
 /* In this case, this margin overrides the one that targets all h2 elements */
 
-#about-us-text-box>h2 {
-    margin-top: 10px;
-    margin-bottom: 10px;
+#about-us-text-box > h2 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/* Styling for Artwork page */
+
+.artwork-box {
+  background-color: #ffffff;
+  height: 133px;
+  width: 100px;
+  border-radius: 20xp;
 }
 
 /* Media query: tablets and larger (768px and up) */
 
 @media screen and (min-width: 768px) {
+  header {
+    position: absolute;
+  }
 
-    header {
-        position: absolute;
-    }
+  nav {
+    position: relative;
+    width: fit-content;
+    padding: 0 1rem;
+    box-shadow: none;
+    background-color: #ffffff;
+    display: block;
+  }
 
-    nav {
-        position: relative;
-        width: fit-content;
-        padding: 0 1rem;
-        box-shadow: none;
-        background-color: #ffffff;
-        display: block;
-    }
+  #main-menu {
+    display: flex;
+    flex-direction: row;
+    gap: 45px;
+    margin-top: 1em;
+    margin-left: 1em;
+    align-self: flex-end;
+    margin-bottom: 1em;
+    font-size: 110%;
+    letter-spacing: 4px;
+    list-style: none;
+    flex-basis: 80vh;
+  }
 
-    #main-menu {
-        display: flex;
-        flex-direction: row;
-        gap: 45px;
-        margin-top: 1em;
-        margin-left: 1em;
-        align-self: flex-end;
-        margin-bottom: 1em;
-        font-size: 110%;
-        letter-spacing: 4px;
-        list-style: none;
-        flex-basis: 80vh;
-    }
+  .nav-toggle-label {
+    display: none;
+  }
 
-    .nav-toggle-label {
-        display: none;
-    }
+  h1 {
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    font-size: 300%;
+    padding-top: 25px;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
 
-    h1 {
-        text-transform: uppercase;
-        letter-spacing: 10px;
-        font-size: 300%;
-        padding-top: 25px;
-        margin-top: 0;
-        margin-bottom: 0;
-        padding-bottom: 0;
-    }
+  main {
+    margin-top: 125px;
+    height: 860px;
+  }
 
-    main {
-        margin-top: 125px;
-        height: 860px;
-    }
+  #welcome-text {
+    padding-top: 24px;
+    padding-right: 0;
+    padding-bottom: 28px;
+    padding-left: 24px;
+    position: absolute;
+    bottom: 33%;
+    width: 50%;
+    border-radius: 0 10px 10px 0;
+  }
 
-    #welcome-text {
-        padding-top: 24px;
-        padding-right: 0;
-        padding-bottom: 28px;
-        padding-left: 24px;
-        position: absolute;
-        bottom: 33%;
-        width: 50%;
-        border-radius: 0 10px 10px 0;
-    }
+  #for-artists {
+    border-radius: 10px 0 0 10px;
+  }
 
-    #for-artists {
-        border-radius: 10px 0 0 10px;
-    }
+  h2 {
+    font-size: 140%;
+    padding: 7px;
+    margin-top: 60px;
+    margin-bottom: 3px;
+  }
 
-    h2 {
-        font-size: 140%;
-        padding: 7px;
-        margin-top: 60px;
-        margin-bottom: 3px;
-    }
+  footer {
+    min-height: 4vh;
+    padding: 10px;
+  }
 
-    footer {
-        min-height: 4vh;
-        padding: 10px;
-    }
+  #social-network-icons {
+    gap: 20px;
+  }
 
-    #social-network-icons {
-        gap: 20px;
-    }
+  #copyright {
+    font-size: 13px;
+    padding-left: 2px;
+    align-self: center;
+  }
 
-    #copyright {
-        font-size: 13px;
-        padding-left: 2px;
-        align-self: center;
-    }
+  /* Form style */
 
-    /* Form style */
+  #form {
+    width: 450px;
+    height: 460px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    vertical-align: top;
+    gap: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+    box-shadow: 0 2px 2px #a0a0a0;
+  }
 
-    #form {
-        width: 450px;
-        height: 460px;
-        margin-top: 50px;
-        margin-bottom: 100px;
-        vertical-align: top;
-        gap: 20px;
-        padding-left: 30px;
-        padding-right: 30px;
-        justify-content: center;
-        flex-wrap: wrap;
-        box-shadow: 0 2px 2px #a0a0a0;
-    }
+  #message-field {
+    min-height: 120px;
+    width: 390px;
+    margin-top: 10px;
+    margin-left: 0;
+  }
 
-    #message-field {
-        min-height: 120px;
-        width: 390px;
-        margin-top: 10px;
-        margin-left: 0;
-    }
+  input[type="submit"] {
+    width: 70px;
+    height: 30px;
+    align-self: center;
+  }
 
-    input[type="submit"] {
-        width: 70px;
-        height: 30px;
-        align-self: center;
-    }
+  /* About us page style */
 
-    /* About us page style */
+  #about-us {
+    background: url("../images/about-us-min.webp") no-repeat fixed left top;
+    background-size: cover;
+    height: 120vh;
+    background-color: rgb(243, 241, 237);
+    display: flex;
+    justify-content: center;
+  }
 
-    #about-us {
-        background: url("../images/about-us-min.webp") no-repeat fixed left top;
-        background-size: cover;
-        height: 120vh;
-        background-color: rgb(243, 241, 237);
-        display: flex;
-        justify-content: center;
-    }
-
-    #about-us-text-box {
-        background-color: rgba(255, 255, 255, 0.9);
-        padding: 20px 40px 40px 40px;
-        width: 80%;
-        border-radius: 0 20px 20px 0;
-        height: fit-content;
-        align-self: flex-start;
-        margin-right: 30px;
-        margin-top: 20px;
-        margin-bottom: 170px;
-        position: relative;
-    }
+  #about-us-text-box {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px 40px 40px 40px;
+    width: 80%;
+    border-radius: 0 20px 20px 0;
+    height: fit-content;
+    align-self: flex-start;
+    margin-right: 30px;
+    margin-top: 20px;
+    margin-bottom: 170px;
+    position: relative;
+  }
 }
 
 /* Media query: laptops and larger (992px and up) */
 
 @media screen and (min-width: 992px) {
+  h1 {
+    letter-spacing: 40px;
+    font-size: 600%;
+    padding-top: 25px;
+  }
 
-    h1 {
-        letter-spacing: 40px;
-        font-size: 600%;
-        padding-top: 25px;
-    }
+  #main-menu a:hover {
+    border-bottom: 1px solid;
+  }
 
-    #main-menu a:hover {
-        border-bottom: 1px solid;
-    }
+  #main-menu {
+    gap: 150px;
+    letter-spacing: 6px;
+  }
 
-    #main-menu {
-        gap: 150px;
-        letter-spacing: 6px;
-    }
+  main {
+    margin-top: 175px;
+    height: 750px;
+  }
 
-    main {
-        margin-top: 175px;
-        height: 750px;
-    }
+  #welcome-text {
+    padding-top: 24px;
+    padding-right: 0;
+    padding-bottom: 32px;
+    padding-left: 24px;
+    position: absolute;
+    bottom: 30%;
+    width: 33%;
+  }
 
-    #welcome-text {
-        padding-top: 24px;
-        padding-right: 0;
-        padding-bottom: 32px;
-        padding-left: 24px;
-        position: absolute;
-        bottom: 30%;
-        width: 33%;
-    }
+  h2 {
+    font-size: 160%;
+    padding: 7px;
+    margin-top: 35px;
+    margin-bottom: 3px;
+  }
 
-    h2 {
-        font-size: 160%;
-        padding: 7px;
-        margin-top: 35px;
-        margin-bottom: 3px;
-    }
+  /* Form style */
 
-    /* Form style */
+  #form {
+    height: 550px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
 
-    #form {
-        height: 550px;
-        margin-top: 30px;
-        margin-bottom: 30px;
-    }
+  #message-field {
+    min-height: 180px;
+    width: 390px;
+    margin-top: 10px;
+    margin-left: 0;
+  }
 
-    #message-field {
-        min-height: 180px;
-        width: 390px;
-        margin-top: 10px;
-        margin-left: 0;
-    }
+  /* About us page style */
 
-    /* About us page style */
+  #about-us {
+    background: url("../images/about-us-min.webp") no-repeat fixed right top;
+    background-size: 150vh;
+    height: 1000px;
+    background-color: rgb(243, 241, 237);
+  }
 
-    #about-us {
-        background: url("../images/about-us-min.webp") no-repeat fixed right top;
-        background-size: 150vh;
-        height: 1000px;
-        background-color: rgb(243, 241, 237);
-    }
-
-    #about-us-text-box {
-        padding: 20px 40px 40px 40px;
-        width: 45%;
-        margin-left: 10px;
-        margin-top: 200px;
-        margin-bottom: 20%;
-    }
+  #about-us-text-box {
+    padding: 20px 40px 40px 40px;
+    width: 45%;
+    margin-left: 10px;
+    margin-top: 200px;
+    margin-bottom: 20%;
+  }
 }
