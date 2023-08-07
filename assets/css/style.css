@@ -336,14 +336,14 @@ input[type="submit"]:active {
 /* Styling for Artwork page */
 
 #artwork-section {
+  --element-gap: 50px;
   width: 100%;
   display: flex;
   flex-flow: row wrap;
-  row-gap: 20px;
-  column-gap: 20px;
+  row-gap: var(--element-gap);
+  column-gap: var(--element-gap);
   align-content: flex-start;
-  padding: 20px;
-  
+  padding: var(--element-gap);
 }
 
 #artwork-section > * {
@@ -406,7 +406,7 @@ input[type="submit"]:active {
 
   main {
     margin-top: 125px;
-    height: 860px;
+    padding-bottom: 50px;
   }
 
   #welcome-text {
@@ -520,7 +520,6 @@ input[type="submit"]:active {
 
   main {
     margin-top: 175px;
-    height: 750px;
   }
 
   #welcome-text {
