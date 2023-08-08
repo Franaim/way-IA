@@ -320,7 +320,7 @@ input[type="submit"]:active {
 
 #about-us-text-box {
   background-color: rgba(255, 255, 255, 0.9);
-  padding: 10px 10px 20px 15px;
+  padding: 10px 15px 20px 15px;
   width: 95%;
   border-radius: 20px;
   height: fit-content;
@@ -332,7 +332,7 @@ input[type="submit"]:active {
 
 /* In this case, this margin overrides the one that targets all h2 elements */
 
-#about-us-text-box > h2 {
+#about-us-text-box > h2, #artwork-section .artwork-box h2 {
   margin-top: 10px;
   margin-bottom: 10px;
 }
@@ -340,34 +340,51 @@ input[type="submit"]:active {
 /* Styling for Artwork page */
 
 #artwork-section {
-  --element-gap: 20px;
+  --element-gap: 15px;
   width: 100%;
   display: flex;
   flex-flow: row wrap;
   row-gap: var(--element-gap);
-  column-gap: var(--element-gap);
+  /* column-gap: 15px; */
   align-content: center;
-  justify-content: flex-start;
-  padding: var(--element-gap);
+  justify-content: center;
+  /* padding: var(--element-gap); */
+  margin-top: 20px;
+  margin-bottom: 60px;
 }
 
 #artwork-section > * {
-  width: 352px;
-  height: 390px;
-  max-width: 520px;
+  width: 265px;
+  height: 360px;
+  /* width: 352px; */
+  /* height: 390px; */
+  /* max-width: 520px; */
+  flex-wrap: wrap;
   /* flex-grow: 1; */
 }
 
 .artwork-box {
   background-color: #ffffff;
   border-radius: 10px;
-  padding: 10px;
+  overflow: auto;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 10px 20px 10px;
+  box-shadow: 0 2px 2px #a0a0a0;
+  border-bottom: #ffffff solid 15px;
+  border-top: #ffffff solid 10px;
+}
+
+.artwork-box > p {
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
 section img {
   width: 100%;
   height: auto;
   border-radius: 5px;
+  padding-bottom: 6px;
 }
 
 section img:hover {
