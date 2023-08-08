@@ -642,7 +642,7 @@ section img:hover {
   /* About us page style */
 
   #about-us {
-    background: url("../images/about-us-min.webp") no-repeat fixed right top;
+    background: url("../images/artwork03.png") no-repeat fixed right top;
     background-size: 150vh;
     height: 1000px;
     background-color: rgb(243, 241, 237);
