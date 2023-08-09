@@ -1,14 +1,14 @@
-/*Import font links*/
+/* Import font links */
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&display=swap");
 
-/*Wildcard selector to change default styling properties*/
+/* Wildcard selector to change default styling properties */
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
-/*General styling for the body content*/
+/* General style for the body content */
 
 body {
   font-family: "Roboto Mono", sans-serif;
@@ -17,7 +17,7 @@ body {
   min-height: 100vh;
 }
 
-/*Style for the header*/
+/* Style for the header */
 
 header {
   background-color: #ffffff;
@@ -28,20 +28,13 @@ header {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  /* Position for mobile screen size */
   position: fixed;
   z-index: 99;
   box-shadow: 0 2px 2px #5a5a5a;
 }
 
-/*Change of default style for anchor elements in header and footer*/
-
-header a,
-footer a {
-  text-decoration: none;
-  color: inherit;
-}
-
-/*Styling for title on the header*/
+/* Styling for title on the header */
 
 h1 {
   text-transform: uppercase;
@@ -51,7 +44,15 @@ h1 {
   margin-top: 3px;
 }
 
-/*Styling for main menu/navigation bar on the header*/
+/* Change of default style for anchor elements in header and footer */
+
+header a,
+footer a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Styling for main menu/navigation bar on the header */
 
 nav {
   position: absolute;
@@ -59,8 +60,9 @@ nav {
   padding: 0 1rem;
   box-shadow: 0 2px 2px #3f3f3f;
   background-color: #ffffff;
-  display: none;
   top: 99%;
+  /* Hidden for mobile screen size */
+  display: none;
 }
 
 #main-menu {
@@ -76,6 +78,14 @@ nav {
   flex-basis: 80vh;
 }
 
+/* Underline to indicate current page on the nav menu */
+
+.active {
+  border-bottom: 1px solid #303030;
+}
+
+/* Dropdown menu only visible for mobile screen size */
+
 #nav-toggle:checked ~ nav {
   display: block;
 }
@@ -84,15 +94,7 @@ nav {
   display: none;
 }
 
-.active {
-  border-bottom: 1px solid #5f5f5f;
-}
-
-/*General styling for main content in all pages*/
-
-.hidden-heading {
-  display: none;
-}
+/* General styling for main content in all pages */
 
 main {
   background-color: rgb(243, 241, 237);
@@ -103,7 +105,34 @@ main {
   height: max-content;
 }
 
-/*Background image in index*/
+/* Styling for h2 in all pages */
+
+h2 {
+  font-size: 100%;
+  padding: 7px;
+  margin-top: 15px;
+  margin-bottom: 3px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* Hidden headings in sections for search engines */
+
+.hidden-heading {
+  display: none;
+}
+
+/* Every time the name of the gallery appears in a text it should look like this */
+
+.logo-in-text {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+/* Style for Homepage/Index */
+
+/* Background image */
 
 #background-image {
   height: 750px;
@@ -112,7 +141,7 @@ main {
   position: relative;
 }
 
-/*Styling for "welcome text" box*/
+/* Style for welcome box */
 
 #welcome-text {
   background-color: rgba(255, 255, 255, 0.9);
@@ -123,15 +152,7 @@ main {
   border-radius: 0 20px 20px 0;
 }
 
-/*Every time the name of the gallery appears in a text it should look like this:*/
-
-.logo-in-text {
-  font-family: "Josefin Sans", sans-serif;
-  font-weight: 600;
-  font-size: 15px;
-}
-
-/*Styling for "If you're an artist" box*/
+/* Style for 'To form for artists' box */
 
 #for-artists {
   color: #ffffff;
@@ -152,26 +173,291 @@ main {
   color: inherit;
 }
 
-#click-here:hover {
+/* Hover effects on Homepage/Index */
+
+#click-here:hover, #click-here:active {
   font-weight: 800;
 }
 
-#click-here:active {
-  font-weight: 800;
+/* Style for About-us page */
+
+/* General style */
+
+#about-us {
+  background: url("../images/artwork03.png") no-repeat center top;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: auto;
 }
 
-/*Styling for titles in all pages except for index*/
+/* Style for text box */
 
-h2 {
-  font-size: 100%;
-  padding: 7px;
-  margin-top: 15px;
-  margin-bottom: 3px;
+#about-us-text-box {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 10px 15px 20px 15px;
+  width: 95%;
+  border-radius: 20px;
+  height: fit-content;
+  position: relative;
+  z-index: 50;
+  margin-top: 60px;
+  margin-bottom: 150px;
+}
+
+/* Margins for h2 on About us and Artwork pages */
+
+#about-us-text-box > h2,
+#artwork-section .artwork-box h2 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/* Style for Artwork page */
+
+/* Boxes container styled with flexbox */
+
+#artwork-section {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  row-gap: 15px;
+  column-gap: 15px;
+  align-content: center;
+  justify-content: space-evenly;
+  margin-top: 20px;
+  margin-bottom: 60px;
+}
+
+/* General style for all boxes */
+
+#artwork-section>* {
+  width: 265px;
+  height: 360px;
+  flex-wrap: wrap;
+}
+
+/* Style within the box */
+
+.artwork-box {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 0 10px 10px 10px;
+  box-shadow: 0 2px 2px #a0a0a0;
+  border-bottom: #ffffff solid 10px;
+  border-top: #ffffff solid 10px;
+  overflow: visible;
+}
+
+/* Scrollbar and paddings for text within boxes */
+
+#artwork-box-1 {
+  overflow: auto;
+}
+
+.artwork-box>p,
+h3 {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+/* Size and shape of embeded content and images in box */
+
+section img,
+iframe {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  padding-bottom: 6px;
+}
+
+/* Hover effect on images in boxes */
+
+section img:hover {
+  opacity: 80%;
+}
+
+/* Size of video within box */
+
+div>#moma-video {
+  height: 251px;
+  width: 245px;
+  border: none;
+}
+
+/* Style for text within boxes */
+
+/* Artist's names */
+
+.artist-name {
+  font-weight: 600;
+  font-size: 90%;
+}
+
+/* Titles of artpieces */
+
+.artpiece-name {
+  font-style: italic;
+  font-size: 90%;
+}
+
+/* Container of button within boxes */
+
+.nav-art {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  padding-left: 5px;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  margin-top: 8px;
+}
+
+/* 'To artist's website' button */
+
+.to-artist-site {
+  font-size: 0;
+  text-decoration: none;
+  background-color: rgb(216, 213, 210);
+  color: rgba(216, 213, 210, 0);
+  padding: 5px;
+  border-radius: 0 50% 50% 50%;
+  width: 15px;
+  height: 15px;
+  overflow: hidden;
+}
+
+/* Hover effect on 'To artist' s website' button */
+
+.to-artist-site:hover {
+  font-size: 80%;
+  color: #303030;
+  width: fit-content;
+  height: fit-content;
+  border-radius: 0 10px 10px 10px;
+}
+
+/* Style for Form page */
+
+/* Style for section */
+
+#collaborate {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+/* General style for form */
+
+#form {
+  width: 270px;
+  height: 580px;
+  margin-top: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-bottom: 15px;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  background-color: #ffffff;
+  border: 0;
+  border-radius: 20px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-left: 18px;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  box-shadow: 0 2px 2px #a0a0a0;
+}
+
+/* Name */
+
+#name-field {
+  width: 180px;
+  border: 1px solid;
+}
+
+/* E-mail address */
+
+#email-field {
+  width: 230px;
+  margin-top: 5px;
+  border: 1px solid;
+}
+
+/* Padding for Name and E-mail address */
+
+input[type="text"],
+input[type="email"] {
+  padding-left: 6px;
+}
+
+/* Portfolio */
+
+input[type="file"] {
+  margin-top: 5px;
+  width: 135px;
+  display: none;
+}
+
+/* Message */
+
+#message-field {
+  min-height: 180px;
+  width: 235px;
+  margin-top: 5px;
+  border: 1px solid;
+  border-radius: 5px;
+}
+
+/* Form field box */
+
+.form-box {
+  padding: 3px;
+  height: 30px;
+  border-radius: 5px;
+}
+
+/* Upload portfolio button */
+
+#button-upload {
+  padding: 5px;
+  color: #ffffff;
+  background-color: #303030;
+  border: none;
+  border-radius: 5px;
   text-align: center;
-  text-transform: uppercase;
 }
 
-/*Styling for footer*/
+/* Submit button */
+
+input[type="submit"] {
+  color: #ffffff;
+  background-color: #303030;
+  width: 60px;
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+  margin-left: 80px;
+  margin-right: 80px;
+  height: 30px;
+}
+
+/* Hover effect on buttons on form */
+
+#button-upload:hover,
+#button-upload:active,
+input[type="submit"]:hover,
+input[type="submit"]:active {
+  font-weight: 600;
+  background-color: #000000;
+}
+
+/*Style for footer in all pages*/
 
 footer {
   background-color: rgb(216, 213, 210);
@@ -202,238 +488,10 @@ footer {
   align-self: flex-end;
 }
 
-/* Form style */
-
-#collaborate {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 40px;
-}
-
-#form {
-  width: 270px;
-  height: 580px;
-  margin-top: 10px;
-  margin-left: 5px;
-  margin-right: 5px;
-  margin-bottom: 15px;
-  padding-top: 10px;
-  padding-bottom: 5px;
-  background-color: #ffffff;
-  border: 0;
-  border-radius: 20px;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  padding-left: 18px;
-  justify-content: center;
-  align-items: flex-start;
-  flex-wrap: wrap;
-  box-shadow: 0 2px 2px #a0a0a0;
-}
-
-#name-field {
-  width: 180px;
-  border: 1px solid;
-}
-
-#email-field {
-  width: 230px;
-  margin-top: 5px;
-  border: 1px solid;
-}
-
-#message-field {
-  min-height: 180px;
-  width: 235px;
-  margin-top: 5px;
-  border: 1px solid;
-  border-radius: 5px;
-}
-
-input[type="file"] {
-  margin-top: 5px;
-  width: 135px;
-  display: none;
-}
-
-input[type="text"], input[type="email"] {
-padding-left: 6px;
-}
-
-
-.form-box {
-  padding: 3px;
-  height: 30px;
-  border-radius: 5px;
-}
-
-#button-upload {
-  padding: 5px;
-  color: #ffffff;
-  background-color: #303030;
-  border: none;
-  border-radius: 5px;
-  text-align: center;
-}
-
-#button-upload:hover, #button-upload:active {
-  font-weight: 600;
-  background-color: #000000;
-}
-
-input[type="submit"] {
-  color: #ffffff;
-  background-color: #303030;
-  width: 60px;
-  border: none;
-  border-radius: 5px;
-  padding: 5px;
-  margin-left: 80px;
-  margin-right: 80px;
-  height: 30px;
-}
-
-input[type="submit"]:hover, input[type="submit"]:active {
-  font-weight: 600;
-  background-color: #000000;
-}
-
-/*Styling for about-us page*/
-
-#about-us {
-  background: url("../images/artwork03.png") no-repeat center top;
-  background-size: cover;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  height: auto;
-}
-
-#about-us-text-box {
-  background-color: rgba(255, 255, 255, 0.9);
-  padding: 10px 15px 20px 15px;
-  width: 95%;
-  border-radius: 20px;
-  height: fit-content;
-  position: relative;
-  z-index: 50;
-  margin-top: 60px;
-  margin-bottom: 150px;
-}
-
-/* In this case, this margin overrides the one that targets all h2 elements */
-
-#about-us-text-box > h2, #artwork-section .artwork-box h2 {
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
-/* Styling for Artwork page */
-
-#artwork-section {
-  width: 100%;
-  display: flex;
-  flex-flow: row wrap;
-  row-gap: 15px;
-  column-gap: 15px;
-  align-content: center;
-  justify-content: space-evenly;
-  margin-top: 20px;
-  margin-bottom: 60px;
-}
-
-#artwork-section > * {
-  width: 265px;
-  height: 360px;
-  /* width: 352px; */
-  /* height: 390px; */
-  /* max-width: 520px; */
-  flex-wrap: wrap;
-  /* flex-grow: 1; */
-}
-
-.artwork-box {
-  background-color: #ffffff;
-  border-radius: 10px;
-  padding: 0 10px 10px 10px;
-  box-shadow: 0 2px 2px #a0a0a0;
-  border-bottom: #ffffff solid 10px;
-  border-top: #ffffff solid 10px;
-  overflow: visible;
-}
-
-#artwork-box-1 {
-  overflow: auto;
-}
-
-.artwork-box > p, h3 {
-  padding-left: 5px;
-  padding-right: 5px;
-}
-
-section img, iframe {
-  width: 100%;
-  height: auto;
-  border-radius: 5px;
-  padding-bottom: 6px;
-}
-
-section img:hover {
-  opacity: 80%;
-}
-
-div > #moma-video {
-  height: 251px;
-  width: 245px;
-  border: none;
-}
-
-.artist-name {
-  font-weight: 600;
-  font-size: 90%;
-}
-
-.artpiece-name {
-  font-style: italic;
-  font-size: 90%;
-}
-
-.nav-art {
-  display: flex;
-  width: 100%;
-  flex-direction: column;
-  padding-left: 5px;
-  flex-wrap: wrap;
-  align-items: flex-start;
-  margin-top: 8px;
-}
-
-.to-artist-site {
-  font-size: 0;
-  text-decoration: none;
-  background-color: rgb(216, 213, 210);
-  color: rgba(216, 213, 210, 0);
-  padding: 5px;
-  border-radius: 0 50% 50% 50%;
-  width: 15px;
-  height: 15px;
-  overflow: hidden; 
-}
-
-.to-artist-site:hover {
-  font-size: 80%;
-  color: #303030;
-  width: fit-content;
-  height: fit-content;
-  border-radius: 0 10px 10px 10px;
-}
-
 /* Media query: tablets and larger (768px and up) */
 
 @media screen and (min-width: 768px) {
+  /* So the header isn't visible when scrolling down on larger screens */
   header {
     position: absolute;
   }
@@ -441,11 +499,11 @@ div > #moma-video {
   nav {
     position: relative;
     width: fit-content;
-    padding: 0 1rem;
     box-shadow: none;
-    background-color: #ffffff;
     display: block;
   }
+
+  /* Style for navigation menu on larger screens */
 
   #main-menu {
     display: flex;
@@ -461,9 +519,13 @@ div > #moma-video {
     flex-basis: 80vh;
   }
 
+  /* Hide nav toggle on larger screens */
+
   .nav-toggle-label {
     display: none;
   }
+
+  /* Style for main title */
 
   h1 {
     text-transform: uppercase;
@@ -475,26 +537,15 @@ div > #moma-video {
     padding-bottom: 0;
   }
 
+  /* General style for main content */
+
   main {
     margin-top: 125px;
     padding-bottom: 40px;
     height: fit-content;
   }
 
-  #welcome-text {
-    padding-top: 24px;
-    padding-right: 0;
-    padding-bottom: 28px;
-    padding-left: 24px;
-    position: absolute;
-    bottom: 33%;
-    width: 50%;
-    border-radius: 0 10px 10px 0;
-  }
-
-  #for-artists {
-    border-radius: 10px 0 0 10px;
-  }
+  /* Style for elements in all pages */
 
   h2 {
     font-size: 140%;
@@ -518,7 +569,59 @@ div > #moma-video {
     align-self: center;
   }
 
-  /* Form style */
+  /* Style for homepage/index */
+
+  /* Style for 'Welcome' box */
+
+  #welcome-text {
+    padding: 24px 0 28px 24px;
+    bottom: 33%;
+    width: 50%;
+    border-radius: 0 10px 10px 0;
+  }
+
+  /* Style for 'To form for artists' box */
+
+  #for-artists {
+    border-radius: 10px 0 0 10px;
+  }
+
+  /* Style for About us page */
+
+  #about-us {
+    background: url("../images/artwork03.png") no-repeat fixed center top;
+    background-size: cover;
+    height: 120vh;
+    background-color: rgb(243, 241, 237);
+    display: flex;
+    justify-content: center;
+  }
+
+  #about-us-text-box {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px 40px 40px 40px;
+    width: 80%;
+    border-radius: 10px;
+    height: fit-content;
+    align-self: flex-start;
+    margin-left: 10px;
+    margin-right: 30px;
+    margin-top: 20px;
+    margin-bottom: 170px;
+    position: relative;
+  }
+
+  /* Style for Artwork page */
+
+  #artwork-section {
+    justify-content: space-around;
+    align-content: flex-start;
+    gap: 60px;
+    padding: 50px;
+    flex-wrap: wrap;
+  }
+
+  /* Style for Form page */
 
   #form {
     width: 450px;
@@ -550,64 +653,44 @@ div > #moma-video {
     height: 30px;
     align-self: center;
   }
-
-  /* About us page style */
-
-  #about-us {
-    background: url("../images/artwork03.png") no-repeat fixed center top;
-    background-size: cover;
-    height: 120vh;
-    background-color: rgb(243, 241, 237);
-    display: flex;
-    justify-content: center;
-  }
-
-  #about-us-text-box {
-    background-color: rgba(255, 255, 255, 0.9);
-    padding: 20px 40px 40px 40px;
-    width: 80%;
-    border-radius: 10px;
-    height: fit-content;
-    align-self: flex-start;
-    margin-left: 10px;
-    margin-right: 30px;
-    margin-top: 20px;
-    margin-bottom: 170px;
-    position: relative;
-  }
-
-  /* Artwork page style */
-
-  #artwork-section {
-    justify-content: space-around;
-    align-content: flex-start;
-    gap: 60px;
-    padding: 50px;
-    flex-wrap: wrap;
-  }
 }
 
 /* Media query: laptops and larger (992px and up) */
 
 @media screen and (min-width: 992px) {
+
+  /* Titles in large screens */
   h1 {
     letter-spacing: 40px;
     font-size: 600%;
     padding-top: 25px;
   }
 
-  #main-menu a:hover {
-    border-bottom: 1px solid;
+  h2 {
+    font-size: 160%;
+    padding: 7px;
+    margin-top: 35px;
+    margin-bottom: 3px;
   }
+
+  /* Main content in large screens */
+
+  main {
+    margin-top: 175px;
+  }
+
+  /* Nav menu on larger screens and hover effect */
 
   #main-menu {
     gap: 150px;
     letter-spacing: 6px;
   }
 
-  main {
-    margin-top: 175px;
+  #main-menu a:hover {
+    border-bottom: 1px solid;
   }
+
+  /* Style for homapage/index on large screens */
 
   #welcome-text {
     padding-top: 24px;
@@ -619,30 +702,8 @@ div > #moma-video {
     width: 33%;
   }
 
-  h2 {
-    font-size: 160%;
-    padding: 7px;
-    margin-top: 35px;
-    margin-bottom: 3px;
-  }
-
-  /* Form style */
-
-  #form {
-    height: 550px;
-    margin-top: 30px;
-    margin-bottom: 30px;
-  }
-
-  #message-field {
-    min-height: 180px;
-    width: 390px;
-    margin-top: 10px;
-    margin-left: 0;
-  }
-
-  /* About us page style */
-
+  /* Style for About us page */
+  
   #about-us {
     background: url("../images/artwork03.png") no-repeat fixed right top;
     background-size: 150vh;
@@ -658,7 +719,7 @@ div > #moma-video {
     margin-bottom: 20%;
   }
 
-  /* Artwork page style */
+  /* Style for Artwork page */
 
   #artwork-section {
     justify-content: flex-start;
@@ -671,4 +732,21 @@ div > #moma-video {
     flex-grow: 2;
     padding: 20px;
   }
+
+  /* Style for Form page */
+
+  #form {
+    height: 550px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  #message-field {
+    min-height: 180px;
+    width: 390px;
+    margin-top: 10px;
+    margin-left: 0;
+  }
+
+  
 }

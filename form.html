@@ -13,10 +13,16 @@
 </head>
 
 <body\>
+
+<!-- Header for all pages -->
+
     <header>
         <a href=index.html>
             <h1 id="logo">WAY•AI•AI</h1>
         </a>
+
+        <!-- Dropdown menu only visible for mobile screen size -->
+
         <input type="checkbox" id="nav-toggle" name="nav-toggle">
         <label for="nav-toggle" class="nav-toggle-label"><i class="fa-solid fa-sort-down"></i></label>
         <nav>
@@ -27,19 +33,35 @@
             </ul>
         </nav>
     </header>
+
+    <!-- Specific content of form page -->
+
     <main>
         <section id="collaborate">
+            <!-- In this case the visible heading is not wrapped inside any div -->
             <h2>Collaborate with us</h2>
+            
+            <!-- Form for artists to collaborate -->
+
             <form action="wayaiai-database.net" method="POST">
                 <div id="form">
+
+                    <!-- Name -->
+
                     <div>
                         <label for="name-field" class="form-label">Name</label>
                         <input id="name-field" type="text" name="full_name" placeholder="Ai Weiwei" required class="form-box">
                     </div>
+
+                    <!-- E-mail address -->
+
                     <div>
                         <label for="email-field" class="form-label"></label>E-mail address</label>
                         <input id="email-field" type="email" name="email" placeholder="sunflowerseeds@artmail.com" class="form-box" required>
                     </div>
+
+                    <!-- Age -->
+                    
                     <div>
                         <label for="age" class="form-label">Age</label>
                         <select id="age" name="age" class="form-box" required>
@@ -50,21 +72,33 @@
                             <option value="50+">50+</option>
                         </select>
                     </div>
+
+                    <!-- Portfolio -->
+
                     <div>
                         <label for="button-upload">Show us your work</label>
                         <button id="button-upload"><label for="portfolio" class="form-label form-box">Upload portfolio</label></button>
                         <input id="portfolio" type="file" name="portfolio" required>
                     </div>
+
+                    <!-- Ideas for collaboration -->
+
                     <div>
                         <label for="message-field" class="form-label">Tell us your ideas for <span class="logo-in-text">WAY AI
                                 AI</span></label>
                         <textarea id="message-field" name="message" required></textarea>
                     </div>
+
+                    <!-- Submit button -->
+
                     <input type="submit">
                 </div>
             </form>
         </section>
     </main>
+
+    <!-- Footer for all pages -->
+
     <footer>
         <div>
             <ul id="social-network-icons">
