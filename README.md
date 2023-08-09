@@ -9,8 +9,6 @@ Users of the site can find information and learn about the project, view images 
 
 ## Features
 
----
-
 ### Navigation
 
 On this website you will find sections with the information that a user would surely look for on the website of a digital art gallery, for example:
@@ -66,8 +64,6 @@ On this website you will find sections with the information that a user would su
 - From here, we will be able to enter some personal data to collaborate with the gallery: name, e-mail address, age and a message. In addition, to send the form, the applicant artist will have to upload their portfolio.
 
 ## Testing
-
----
 
 - I tested that this page works in different browsers: Chrome, Safari, Tor and Firefox.
 - Applying Chrome's devtools, I verified that the design of the project was responsive and retained its functionality and good appearance on different devices (smartphones, tablets, laptops, desktops and large monitors).
