@@ -9,7 +9,9 @@ Users of the site can find information and learn about the project, view images 
 
 ## Features
 
-### Navegation
+---
+
+### Navigation
 
 On this website you will find sections with the information that a user would surely look for on the website of a digital art gallery, for example:
 
@@ -62,3 +64,63 @@ On this website you will find sections with the information that a user would su
 - This page can only be reached from the homepage or index.
 - With a sober design, we see a white form centred, leaving the background colour of the page visible. The contrast will be concentrated on the title of the page and the Upload portfolio and Submit buttons on the form.
 - From here, we will be able to enter some personal data to collaborate with the gallery: name, e-mail address, age and a message. In addition, to send the form, the applicant artist will have to upload their portfolio.
+
+## Testing
+
+---
+
+- I tested that this page works in different browsers: Chrome, Safari, Tor and Firefox.
+- Applying Chrome's devtools, I verified that the design of the project was responsive and retained its functionality and good appearance on different devices (smartphones, tablets, laptops, desktops and large monitors).
+- I confirmed that all content on the site is easy to see, understand and read.
+- I ensured that the form works, with each field responding to the corresponding content and requiring the user to complete the entire form before submitting it.
+
+### Bugs
+
+- No bugs have been discovered in the deployment of this project.
+
+### Unfixed bugs
+
+- No unfixed bugs.
+
+### Validator Testing
+
+- HTML: No errors were detected when passing the code through the official W3C validator.
+- CSS: No errors have been detected when passing the code through the official Jigsaw validator.
+- Accessibility: The colours, fonts and contrasts make the website easy to read and accessible. When testing with the Chrome devtools Lighthouse, the results were as follows:
+
+1. Home / Index page:
+   ![Screenshot of Chrome devtools lighthouse report (index)](https://iili.io/HD9dXwu.jpg)
+
+2. About Us page:
+   ![Screenshot of Chrome devtools lighthouse report (about us)](https://iili.io/HD9dhZb.jpg)
+
+3. Artwork page:
+   ![Screenshot of Chrome devtools lighthouse report (artwork)](https://iili.io/HD9dV99.jpg)
+
+4. Form / Collaborate page:
+   ![Screenshot of Chrome devtools lighthouse report (form)](https://iili.io/HD9dWue.jpg)
+
+## Deployment
+
+- The website was deployed to GitHub pages. Deployment instructions:
+
+1. Under your repository name, click Settings. If you cannot see the "Settings" tab, select the dropdown menu, then click Settings.
+
+2. From the Source section drop-down menu, select the Main Branch
+
+3. Once the main branch has been selected, the page provides the link to the completed website.
+   The live link can be found here: [WAY IA IA](https://franaim.github.io/way-ia-ia/)
+
+## Credits
+
+### Content
+
+- The code for the nav toggle on the navigation menu was taken from the CI [Love Running Project](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+LRFX101+2023_Q2/courseware/e805068059af42af87681032aa64053f/7525117e5cd144daa2a7b0c57843bbee/).
+
+### Media
+
+- The icons for Instagram, Twitter, and YouTube were taken from [Fontawesome](https://fontawesome.com/)
+- Most of the text was originally generated with [ChatGPT](https://chat.openai.com/)
+- All the images were created using [Dall-E](https://openai.com/research/dall-e)
+- The fonts were imported from [Google Fonts](https://fonts.google.com/)
+- The video was made by the [MoMa](https://www.moma.org/) and taken from [YouTube](https://www.youtube.com/)
