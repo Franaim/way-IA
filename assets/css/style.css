@@ -8,14 +8,6 @@
   box-sizing: border-box;
 }
 
-:root {
-  /* 
-    variable that we reuse for 
-    footer height and main padding-bottom
-  */
-  --footer-height: 40px;
-}
-
 /*General styling for the body content*/
 
 body {
@@ -345,15 +337,13 @@ input[type="submit"]:active {
 /* Styling for Artwork page */
 
 #artwork-section {
-  --element-gap: 15px;
   width: 100%;
   display: flex;
   flex-flow: row wrap;
-  row-gap: var(--element-gap);
-  column-gap: var(--element-gap);
+  row-gap: 15px;
+  column-gap: 15px;
   align-content: center;
   justify-content: space-evenly;
-  /* padding: var(--element-gap); */
   margin-top: 20px;
   margin-bottom: 60px;
 }
@@ -427,7 +417,7 @@ section img:hover {
   border-radius: 0 50% 50% 50%;
   width: 15px;
   height: 15px;
-  text-overflow: hidden; 
+  overflow: hidden; 
 }
 
 .to-artist-site:hover {
@@ -484,7 +474,7 @@ section img:hover {
 
   main {
     margin-top: 125px;
-    padding-bottom: var(--footer-height);
+    padding-bottom: 40px;
   }
 
   #welcome-text {
@@ -510,7 +500,7 @@ section img:hover {
   }
 
   footer {
-    height: var(--footer-height);
+    height: 40px;
     padding: 10px;
   }
 
