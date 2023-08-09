@@ -309,7 +309,7 @@ input[type="submit"]:active {
 /*Styling for about-us page*/
 
 #about-us {
-  background: url("../images/about-us-min.webp") no-repeat center top;
+  background: url("../images/artwork03.png") no-repeat center top;
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -553,7 +553,7 @@ section img:hover {
   /* About us page style */
 
   #about-us {
-    background: url("../images/about-us-min.webp") no-repeat fixed left top;
+    background: url("../images/artwork03.png") no-repeat fixed center top;
     background-size: cover;
     height: 120vh;
     background-color: rgb(243, 241, 237);
