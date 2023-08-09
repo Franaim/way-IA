@@ -98,6 +98,10 @@ nav {
 
 /*General styling for main content in all pages*/
 
+.hidden-heading {
+  display: none;
+}
+
 main {
   background-color: rgb(243, 241, 237);
   flex: 1 0 auto;
