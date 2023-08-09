@@ -137,7 +137,7 @@ h2 {
 #background-image {
   height: 750px;
   width: 100%;
-  background: url("../images/2.png") no-repeat right center/cover;
+  background: url("../images/2.webp") no-repeat right center/cover;
   position: relative;
 }
 
@@ -184,7 +184,7 @@ h2 {
 /* General style */
 
 #about-us {
-  background: url("../images/artwork03.png") no-repeat center top;
+  background: url("../images/artwork03.webp") no-repeat center top;
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -583,7 +583,7 @@ footer {
   /* Style for About us page */
 
   #about-us {
-    background: url("../images/artwork03.png") no-repeat fixed center top;
+    background: url("../images/artwork03.webp") no-repeat fixed center top;
     background-size: cover;
     height: 120vh;
     background-color: rgb(243, 241, 237);
@@ -699,7 +699,7 @@ footer {
   /* Style for About us page */
   
   #about-us {
-    background: url("../images/artwork03.png") no-repeat fixed right top;
+    background: url("../images/artwork03.webp") no-repeat fixed right top;
     background-size: 150vh;
     height: 1000px;
     background-color: rgb(243, 241, 237);
