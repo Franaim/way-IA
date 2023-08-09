@@ -1,123 +1,166 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="WAI AI AI. A fictional art gallery with AI-generated artwork and artists">
-    <meta name="keywords" content="AI, artificial intelligence, contemporary art, fictional, AI-generated art, digital art, minimal">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="WAI AI AI. A fictional art gallery with AI-generated artwork and artists"
+    />
+    <meta
+      name="keywords"
+      content="AI, artificial intelligence, contemporary art, fictional, AI-generated art, digital art, minimal"
+    />
     <title>WAY AI AI</title>
-    <link href="assets/favicon/512.png" rel="icon">
-    <link href="assets/favicon/180.png" rel="icon">
-    <link href="assets/css/style.css" rel="stylesheet">
-</head>
+    <link href="assets/favicon/512.png" rel="icon" />
+    <link href="assets/favicon/180.png" rel="icon" />
+    <link href="assets/css/style.css" rel="stylesheet" />
+  </head>
 
-<body\>
-
-<!-- Header for all pages -->
+  <body>
+    <!-- Header for all pages -->
 
     <header>
-        <a href=index.html>
-            <h1 id="logo">WAY•AI•AI</h1>
-        </a>
+      <a href="index.html">
+        <h1 id="logo">WAY•AI•AI</h1>
+      </a>
 
-        <!-- Dropdown menu only visible for mobile screen size -->
+      <!-- Dropdown menu only visible for mobile screen size -->
 
-        <input type="checkbox" id="nav-toggle" name="nav-toggle">
-        <label for="nav-toggle" class="nav-toggle-label"><i class="fa-solid fa-sort-down"></i></label>
-        <nav>
-            <ul id="main-menu">
-                <li><a href="index.html">HOME</a></li>
-                <li><a href="about-us.html">ABOUT US</a></li>
-                <li><a href="artwork.html">ARTWORK</a></li>
-            </ul>
-        </nav>
+      <input type="checkbox" id="nav-toggle" name="nav-toggle" />
+      <label for="nav-toggle" class="nav-toggle-label"
+        ><i class="fa-solid fa-sort-down"></i
+      ></label>
+      <nav>
+        <ul id="main-menu">
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="about-us.html">ABOUT US</a></li>
+          <li><a href="artwork.html">ARTWORK</a></li>
+        </ul>
+      </nav>
     </header>
 
     <!-- Specific content of form page -->
 
     <main>
-        <section id="collaborate">
-            <!-- In this case the visible heading is not wrapped inside any div -->
-            <h2>Collaborate with us</h2>
-            
-            <!-- Form for artists to collaborate -->
+      <section id="collaborate">
+        <!-- In this case the visible heading is not wrapped inside any div -->
+        <h2>Collaborate with us</h2>
 
-            <form action="wayaiai-database.net" method="POST">
-                <div id="form">
+        <!-- Form for artists to collaborate -->
 
-                    <!-- Name -->
+        <form action="wayaiai-database.net" method="POST">
+          <div id="form">
+            <!-- Name -->
 
-                    <div>
-                        <label for="name-field" class="form-label">Name</label>
-                        <input id="name-field" type="text" name="full_name" placeholder="Ai Weiwei" required class="form-box">
-                    </div>
+            <div>
+              <label for="name-field" class="form-label">Name</label>
+              <input
+                id="name-field"
+                type="text"
+                name="full_name"
+                placeholder="Ai Weiwei"
+                required
+                class="form-box"
+              />
+            </div>
 
-                    <!-- E-mail address -->
+            <!-- E-mail address -->
 
-                    <div>
-                        <label for="email-field" class="form-label"></label>E-mail address</label>
-                        <input id="email-field" type="email" name="email" placeholder="sunflowerseeds@artmail.com" class="form-box" required>
-                    </div>
+            <div>
+              <label for="email-field" class="form-label">E-mail address</label>
+              <input
+                id="email-field"
+                type="email"
+                name="email"
+                placeholder="sunflowerseeds@artmail.com"
+                class="form-box"
+                required
+              />
+            </div>
 
-                    <!-- Age -->
-                    
-                    <div>
-                        <label for="age" class="form-label">Age</label>
-                        <select id="age" name="age" class="form-box" required>
-                            <option value="18-25">18-25</option>
-                            <option value="26-32">26-32</option>
-                            <option value="33-39">33-39</option>
-                            <option value="40-50">40-50</option>
-                            <option value="50+">50+</option>
-                        </select>
-                    </div>
+            <!-- Age -->
 
-                    <!-- Portfolio -->
+            <div>
+              <label for="age" class="form-label">Age</label>
+              <select id="age" name="age" class="form-box">
+                <option value="18-25">18-25</option>
+                <option value="26-32">26-32</option>
+                <option value="33-39">33-39</option>
+                <option value="40-50">40-50</option>
+                <option value="50+">50+</option>
+              </select>
+            </div>
 
-                    <div>
-                        <label for="button-upload">Show us your work</label>
-                        <button id="button-upload"><label for="portfolio" class="form-label form-box">Upload portfolio</label></button>
-                        <input id="portfolio" type="file" name="portfolio" required>
-                    </div>
+            <!-- Portfolio -->
 
-                    <!-- Ideas for collaboration -->
+            <div>
+              <label for="button-upload" class="form-label form-box"
+                >Show us your work</label
+              >
+              <input id="button-upload" type="file" name="portfolio" required />
+            </div>
 
-                    <div>
-                        <label for="message-field" class="form-label">Tell us your ideas for <span class="logo-in-text">WAY AI
-                                AI</span></label>
-                        <textarea id="message-field" name="message" required></textarea>
-                    </div>
+            <!-- Ideas for collaboration -->
 
-                    <!-- Submit button -->
+            <div>
+              <label for="message-field" class="form-label"
+                >Tell us your ideas for
+                <span class="logo-in-text">WAY AI AI</span></label
+              >
+              <textarea id="message-field" name="message" required></textarea>
+            </div>
 
-                    <input type="submit">
-                </div>
-            </form>
-        </section>
+            <!-- Submit button -->
+
+            <input type="submit" />
+          </div>
+        </form>
+      </section>
     </main>
 
     <!-- Footer for all pages -->
 
     <footer>
-        <div>
-            <ul id="social-network-icons">
-                <li><a href="https://www.instagram.com/" target="_blank" rel="noopener"
-                        aria-label="Visit our Instagram page (opens in a new tab)"><i
-                            class="fa-brands fa-instagram"></i></a></li>
-                <li><a href="https://twitter.com/" target="_blank" rel="noopener"
-                        aria-label="Visit our Twitter page (opens in a new tab)"><i
-                            class="fa-brands fa-twitter"></i></a></li>
-                <li><a href="https://www.youtube.com/" target="_blank" rel="noopener"
-                        aria-label="Visit our Youtube channel (opens in a new tab)"><i
-                            class="fa-brands fa-youtube"></i></a></li>
-            </ul>
-        </div>
-        <div>
-            <p id="copyright">© 2023 WAY AI AI</p>
-        </div>
+      <div>
+        <ul id="social-network-icons">
+          <li>
+            <a
+              href="https://www.instagram.com/"
+              target="_blank"
+              rel="noopener"
+              aria-label="Visit our Instagram page (opens in a new tab)"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+          </li>
+          <li>
+            <a
+              href="https://twitter.com/"
+              target="_blank"
+              rel="noopener"
+              aria-label="Visit our Twitter page (opens in a new tab)"
+              ><i class="fa-brands fa-twitter"></i
+            ></a>
+          </li>
+          <li>
+            <a
+              href="https://www.youtube.com/"
+              target="_blank"
+              rel="noopener"
+              aria-label="Visit our Youtube channel (opens in a new tab)"
+              ><i class="fa-brands fa-youtube"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <p id="copyright">© 2023 WAY AI AI</p>
+      </div>
     </footer>
-    <script src="https://kit.fontawesome.com/e10d0cbe4b.js" crossorigin="anonymous"></script>
-</body>
-
+    <script
+      src="https://kit.fontawesome.com/e10d0cbe4b.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
