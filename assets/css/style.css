@@ -396,7 +396,7 @@ input[type="email"] {
   padding-left: 6px;
 }
 
-/* Portfolio */
+/* Upload Portfolio */
 
 input[type=file]::file-selector-button {
   margin-top: 5px;
@@ -408,7 +408,6 @@ input[type=file]::file-selector-button {
   border: none;
   border-radius: 5px;
   text-align: center;
-    
 }
 
 /* Message */
