@@ -225,7 +225,7 @@ h2 {
   row-gap: 15px;
   column-gap: 15px;
   align-content: center;
-  justify-content: space-evenly;
+  justify-content: space-around;
   margin-top: 20px;
   margin-bottom: 60px;
 }
@@ -233,9 +233,11 @@ h2 {
 /* General style for all boxes */
 
 #artwork-section>* {
-  width: 265px;
-  height: 360px;
+  width: 100%;
+  height: auto;
   flex-wrap: wrap;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 /* Style within the box */
@@ -243,7 +245,7 @@ h2 {
 .artwork-box {
   background-color: #ffffff;
   border-radius: 10px;
-  padding: 0 10px 10px 10px;
+  padding: 0 10px 20px 10px;
   box-shadow: 0 2px 2px #a0a0a0;
   border-bottom: #ffffff solid 10px;
   border-top: #ffffff solid 10px;
@@ -253,6 +255,7 @@ h2 {
 /* Scrollbar and paddings for text within boxes */
 
 #artwork-box-1 {
+  height: 450px;
   overflow: auto;
 }
 
@@ -281,8 +284,9 @@ section img:hover {
 /* Size of video within box */
 
 div>#moma-video {
-  height: 251px;
-  width: 245px;
+  height: auto;
+  min-height: 246px;
+  width: 100%;
   border: none;
 }
 
@@ -374,7 +378,7 @@ form {
   box-shadow: 0 2px 2px #a0a0a0;
 }
 
-/* Form field box (for name, e-mail and ege */
+/* Form field box (for name, e-mail and age */
 
 .form-box {
   padding: 3px;
@@ -592,9 +596,38 @@ footer {
   #artwork-section {
     justify-content: space-around;
     align-content: flex-start;
-    gap: 60px;
+    gap: 50px;
     padding: 50px;
     flex-wrap: wrap;
+  }
+
+  /* General style for all boxes */
+
+  #artwork-section {
+    padding: 20px;
+    column-gap: 5px;
+  }
+
+  #artwork-section>* {
+    width: 320px;
+    height: auto;
+    flex-wrap: wrap;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  /* First box with text */
+
+  #artwork-box-1 {
+    height: 411px;
+    max-width: 400px;
+  }
+
+  /* Video within box */
+
+  div>#moma-video {
+    height: 306px;
+    width: auto;  
   }
 
   /* Style for Form page */
@@ -711,16 +744,32 @@ footer {
 
   /* Style for Artwork page */
 
-  #artwork-section {
+    #artwork-section {
     justify-content: flex-start;
     align-content: flex-start;
     gap: 50px;
     padding: 50px 70px 30px 70px;
   }
 
+  #artwork-section>* {
+    width: 350px;
+    max-height: 441px;
+  }
+
+  /* First box with text */
+
   #artwork-box-1 {
     flex-grow: 2;
     padding: 20px;
+    max-width: 450px;
+    height: 441px;
+  }
+
+  /* Video within box */
+
+  div>#moma-video {
+    height: 336px;
+    width: 330px;
   }
 
   /* Style for Form page */
