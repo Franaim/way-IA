@@ -51,71 +51,79 @@
         <!-- Form for artists to collaborate -->
 
         <form action="wayaiai-database.net" method="POST">
-          <div id="form">
-            <!-- Name -->
+          <!-- Name -->
 
-            <div>
-              <label for="name-field" class="form-label">Name</label>
-              <input
-                id="name-field"
-                type="text"
-                name="full_name"
-                placeholder="Ai Weiwei"
-                required
-                class="form-box"
-              />
-            </div>
+          <div>
+            <label for="name-field" class="form-label">Name</label>
+            <br />
 
-            <!-- E-mail address -->
-
-            <div>
-              <label for="email-field" class="form-label">E-mail address</label>
-              <input
-                id="email-field"
-                type="email"
-                name="email"
-                placeholder="sunflowerseeds@artmail.com"
-                class="form-box"
-                required
-              />
-            </div>
-
-            <!-- Age -->
-
-            <div>
-              <label for="age" class="form-label">Age</label>
-              <select id="age" name="age" class="form-box">
-                <option value="18-25">18-25</option>
-                <option value="26-32">26-32</option>
-                <option value="33-39">33-39</option>
-                <option value="40-50">40-50</option>
-                <option value="50+">50+</option>
-              </select>
-            </div>
-
-            <!-- Portfolio -->
-
-            <div>
-              <label for="button-upload" class="form-label form-box"
-                >Show us your work</label
-              >
-              <input id="button-upload" type="file" name="portfolio" required />
-            </div>
-
-            <!-- Ideas for collaboration -->
-
-            <div>
-              <label for="message-field" class="form-label"
-                >Tell us your ideas for
-                <span class="logo-in-text">WAY AI AI</span></label
-              >
-              <textarea id="message-field" name="message" required></textarea>
-            </div>
-
-            <!-- Submit button -->
-
-            <input type="submit" />
+            <input
+              id="name-field"
+              type="text"
+              name="full_name"
+              placeholder="Ai Weiwei"
+              required
+              class="form-box"
+            />
           </div>
+
+          <!-- E-mail address -->
+
+          <div>
+            <label for="email-field" class="form-label">E-mail address</label>
+            <br />
+
+            <input
+              id="email-field"
+              type="email"
+              name="email"
+              placeholder="sunflowerseeds@artmail.com"
+              class="form-box"
+              required
+            />
+          </div>
+
+          <!-- Age -->
+
+          <div>
+            <label for="age" class="form-label">Age</label>
+            <br />
+
+            <select id="age" name="age" class="form-box">
+              <option value="18-25">18-25</option>
+              <option value="26-32">26-32</option>
+              <option value="33-39">33-39</option>
+              <option value="40-50">40-50</option>
+              <option value="50+">50+</option>
+            </select>
+          </div>
+
+          <!-- Portfolio -->
+
+          <div>
+            <label for="button-upload" class="form-label"
+              >Show us your work</label
+            >
+            <br />
+
+            <input id="button-upload" type="file" name="portfolio" required />
+          </div>
+
+          <!-- Ideas for collaboration -->
+
+          <div>
+            <label for="message-field" class="form-label"
+              >Tell us your ideas for
+              <span class="logo-in-text">WAY AI AI</span></label
+            >
+            <br />
+
+            <textarea id="message-field" name="message" required></textarea>
+          </div>
+
+          <!-- Submit button -->
+
+          <input type="submit" />
         </form>
       </section>
     </main>
